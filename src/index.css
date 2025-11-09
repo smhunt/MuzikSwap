@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-spotify {
+    @apply bg-spotify hover:bg-spotify/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-apple {
+    @apply bg-apple hover:bg-apple/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-youtube {
+    @apply bg-youtube hover:bg-youtube/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+}
